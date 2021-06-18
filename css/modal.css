@@ -1,0 +1,237 @@
+.modalContainer {
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.modal {
+  width: 60%;
+  height: 90%;
+  padding-left: 5%;
+  background: white;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  position: relative;
+  -webkit-transition: transform 0.8s, -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  -o-transition: transform 0.8s, -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+  -moz-transition: transform 0.8s, -webkit-transform 0.8s;
+  -ms-transition: transform 0.8s, -webkit-transform 0.8s;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.modalClose {
+  -webkit-transform: translateY(200%);
+  -ms-transform: translateY(200%);
+  transform: translateY(200%);
+}
+
+.close {
+  font-size: 18px;
+  position: absolute;
+  top: 2vh;
+  right: 2vh;
+  display: inline-block;
+  width: 4vh;
+  height: 4vh;
+  background: red;
+  color: white;
+  cursor: pointer;
+  line-height: 4vh;
+  border-radius: 4px;
+  text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.contentModal {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 740px;
+  width: 86%;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titleModal {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 16px;
+}
+
+.contact-form {
+  height: 960px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 190px;
+  width: 50%;
+}
+
+.msg {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+
+.msg p {
+  font-size: 12px;
+}
+
+.input {
+  margin: 10px 0;
+  background-color: #d3d3d3;
+  color: black;
+  border-bottom: 4px solid #2ecc55;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  padding: 6px;
+  width: 90%;
+}
+
+::-webkit-input-placeholder,
+::-moz-input-placeholder,
+::-ms-input-placeholder {
+  color: black;
+}
+
+.containerButtons {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.btn {
+  background: #2ecc55;
+  text-align: center;
+  padding: 6px;
+  color: black;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+@media screen and (max-width:950px) {
+  .modal {
+    width: 84%;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .modal {
+    height: 94%;
+    width: 80%;
+
+  }
+
+  .contact-form {
+    height: 1180px;
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .titleModal {
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .input-fields {
+    height: 200px;
+    width: 100%;
+  }
+
+  .close {
+    width: 3vh;
+    height: 3vh;
+    line-height: 3vh;
+    right: 1vh;
+    font-size: 12px;
+  }
+
+  .input {
+    padding: 0px;
+    width: 90%;
+    font-size: 12px;
+    height: 30px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  .msg {
+    height: 200px;
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  .msg p {
+    font-size: 10px;
+  }
+}
