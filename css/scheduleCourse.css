@@ -1,0 +1,145 @@
+#schedule {
+  padding-top: 20px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.cardSchedule {
+  background: transparent;
+  /*fallbackforoldbrowsers*/
+  background: -webkit-linear-gradient(to right, #1bac3f54, #7eff9e41), url(../img/calendario.svg);
+  /*Chrome10-25,Safari5.1-6*/
+  background: linear-gradient(to right, #1bac3f54, #7eff9e41), url(../img/calendario.svg);
+  /*asipongolaimagenenelfondoconelcolordegrade*/
+  /*W3C,IE10+/Edge,Firefox16+,Chrome26+,Opera12+,Safari7+*/
+  background-size: cover;
+  /*concoverlaimagensecentra*/
+  background-attachment: fixed;
+  /*Conestolaimagenquedafijacuandohagoscroll*/
+  border: 2px solid #2ecc55;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 520px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .6);
+  cursor: pointer;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  color: black;
+  margin-bottom: 10px;
+  padding: 6px 10px 6px 10px;
+}
+
+.cardSchedule:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+}
+
+.titleCard {
+  font-size: 20px;
+  font-weight: 800;
+  color: #2ecc55;
+  border-bottom: 4px solid #2ecc55;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+.textSchedule {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.observ {
+  font-size: 15px;
+  border-bottom: 2px solid black;
+  border-radius: 2px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  color: black;
+  text-align: center;
+}
+
+th {
+  background: #2ecc55;
+}
+
+th,
+td {
+  border: 2px solid #1bac3f69;
+  height: 60px;
+}
+
+table tr:nth-child(even) {
+  background-color: #e2e2e2;
+}
+
+table tr:nth-child(odd) {
+  background-color: #d3d3d3;
+}
+
+
+@media screen and (max-width:650px) {
+  #schedule {
+    padding-top: 20px;
+    height: 1000px;
+  }
+
+  .titleCard {
+    font-size: 16px;
+  }
+
+  .cardSchedule:nth-child(2) {
+    height: 840px;
+  }
+
+  .textSchedule {
+    font-size: 12px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th {
+    font-size: 14px;
+  }
+
+  td {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width:300px) {
+  .textSchedule {
+    font-size: 10px;
+  }
+
+  th {
+    font-size: 14px;
+  }
+
+  td {
+    font-size: 9px;
+    height: 90px;
+  }
+}

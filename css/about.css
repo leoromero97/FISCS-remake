@@ -1,0 +1,46 @@
+#presentacion {
+  padding-top: 20px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.textAbout {
+  line-height: 24px;
+  font-size: 17px;
+}
+
+.listAbout {
+  line-height: 20px;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.itemSalud {
+  transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  margin-right: 10px;
+  margin-bottom: 4px;
+}
+
+@media screen and (max-width:650px) {
+  #presentacion {
+    height: 800px;
+  }
+
+  .textAbout,
+  .listAbout,
+  ul {
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  .itemSalud {
+    height: 22px;
+  }
+}

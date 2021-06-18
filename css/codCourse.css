@@ -1,0 +1,25 @@
+#codCourse {
+  padding-top: 6px;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+}
+
+.titleCardCod {
+  font-size: 26px;
+  font-weight: 800;
+  color: #2ecc55;
+  border-bottom: 4px solid #2ecc55;
+  width: 60%;
+  text-align: center;
+}
+
+@media screen and (max-width:650px) { 
+  .titleCardCod {
+    font-size: 18px;
+    width: 80%;
+  }
+}
